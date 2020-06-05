@@ -1,0 +1,471 @@
+body{
+    background-color: #3a519d;
+    margin: 0px;
+    overflow-x: hidden;
+    text-align: center;
+}
+
+.container{
+    position: absolute;
+    width: 1280px;
+    margin: 0px;
+    top: 35px;
+    display: block;
+
+}
+.main{
+    position: relative;
+    height: 100%;
+}
+.sidebar{
+    position: absolute;
+    height: 1200px;
+    width: 150px;
+    left: 0px;
+
+}
+.color{
+    height: 730px;
+    background-color: #1e40ad;
+    border-style: solid;
+    border-color: #1e40ad;
+    border-bottom-left-radius: 8px;
+}
+.list{
+    background-color: #113aa2;
+    height: 80px;
+    width: 75px;
+    border-top-left-radius: 20px;
+}
+.logo{
+    padding-top: 10px;
+    height: 65px;
+    width: auto;
+    display: block;
+    margin-top: auto;
+    margin: 0 auto;
+}
+.logo1{
+    padding-top: 15px;
+    height: 50px;
+    width: auto;
+    display: block;
+    margin-top: auto;
+    margin: 0 auto;
+}
+.list1{
+    background-color: #1e40ad;
+    height: 65px;
+    width: 75px;
+    border-style: solid;
+    border-left: 0;
+    border-right: 0;
+    border-width: 1px;
+    border-color: #294ab1;
+}
+li{
+    list-style-type: none;
+
+}
+ul{
+    margin: 0px;
+}
+.info
+{
+    position: relative;
+    height: 1200px;
+    width: 300px;
+    left: 100px;
+}
+.purple{
+    width: 300px;
+    height: 1200px;
+}
+.avatar{
+    position: absolute;
+    display: inline-block;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    left: 90px;
+    top: 64px;
+
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.05), 0 6px 20px 0 rgba(0, 0, 0, 0.05);
+}
+.firstname{
+    position: relative;
+    color: white;
+    font-weight: bold;
+    display: inline-block;
+    bottom: 993px;
+    left: -2px;
+
+}
+.lastname{
+    position: relative;
+    color: white;
+    font-weight: bold;
+    display: inline-block;
+    bottom: 993px;
+    left:1px;
+}
+.header{
+    position: absolute;
+    font-size: 20px;
+    display:inline-block;
+    left: 15px;
+    top: 15px;
+}
+.mini{
+    position: relative;
+    height: 8px;
+    width: auto;
+    float: left;
+    text-align: center;
+    top: 3.3px;
+    left: 33.5px;
+}
+.piradi{
+    color: white;
+    position: absolute;
+    text-align: center;
+    width: 190px;
+    font-size: 10px;
+    top: 238px;
+    left: 55px;
+    transition: 0.3s;
+}
+.piradi:hover{
+    color: #b9b9b9;
+    transition: 0.3s;
+    text-decoration: none;
+}
+.hor{
+    border-style: solid;border-color: white;border-width: 1px; width: 90%; border-radius: 50px; border-color: #323dbf;
+    position: absolute;
+    top: 260px;
+    left: 15px;
+}
+.main{
+    position: relative;
+    width: 270px;
+    height: 55px;
+    background-color: #3156b5;
+    border-style: solid;
+    border-color: #3156b5;
+    border-radius: 5px;
+    bottom: 930px;
+    left: 15px;
+    text-align: center;
+}
+.role{
+    color: #ff9800;
+    font-weight: bold;
+    padding-top: 20px;
+}
+.mainpr{
+    position: absolute;
+    font-size: 11px;
+    color: white;
+    font-weight: bold;
+    width: 120px;
+    top: 3px;
+    left: 73px;
+}
+.idnum{
+    position: relative;
+    height: 115px;
+    width: 270px;
+    background-color: #3156b5;
+    border-style: solid;
+    border-color: #3156b5;
+    border-radius: 5px;
+    left: 15px;
+    bottom: 910px;
+    text-align: center;
+}
+.idnum p{
+    text-align: center;
+}
+.idnums{
+    font-size: 13px;
+    color: white;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+
+}
+.nomeri{
+    color: #ff9800;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    height: 15px;
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+
+}
+.bottom{
+    font-size: 10px;
+    color: white;
+    position: absolute;
+    bottom: 25px;
+    width: 247px;
+    left: 26.5px;
+
+}
+.madeby{
+    position: absolute;
+    bottom: 10px;
+    width: 200px;
+    left: 49px;
+}
+.right{
+    display: inline-block;
+    width: 850px;
+    height: 1200px;
+    position: absolute;
+    background-color: #f2f7ff;
+    top: 0px;
+    left: 415px;
+    border-style: solid;
+    border-color: #f2f7ff;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+/* SPAN */
+.span{
+    color: white;
+    position: absolute;
+    z-index: 99;
+    top: 80px;
+    margin-left: 37.5px;
+    background-color: #3156b5;
+    width: 160px;
+    height: 66PX;
+    text-align: center;
+    display: none;
+    transition: 0.5s;
+}
+.chat{
+    position: absolute;
+    width: 20px;
+    left: 60px;
+    top: 20px;
+}
+.mon{
+    color: white;
+    position: absolute;
+    z-index: 99;
+    top:145.3px;
+    margin-left: 37.5px;
+    background-color: #3156b5;
+    width: 160px;
+    height: 64PX;
+    text-align: center;
+    transition: 0.5s;
+    display: none;
+}
+.monitorsp
+{
+    position: absolute;
+    width: 20px;
+    left: 47px;
+    top: 20px;
+
+}
+#monitor:hover .mon{
+    display: inline-block;
+}
+#monitor:hover{
+    background-color: #3156b5;
+    transition: 0.3s;
+}
+#chat:hover .span{
+    display: inline-block;
+    transition: 0.5s;
+
+}
+#chat:hover{
+    background-color: #3156b5;
+    transition: 0.3s;
+}
+.span1{
+    color: white;
+    position: absolute;
+    z-index: 99;
+    top:341px;
+    margin-left: 37.5px;
+    background-color: #3156b5;
+    width: 160px;
+    height: 63PX;
+    text-align: center;
+    transition: 0.5s;
+    display: none;
+}
+.myclass{
+    position: absolute;
+    color: white;
+    width: 100px;
+    left: 30px;
+    top: 20px;
+    transition: 0.3s;
+}
+#myclass:hover{
+    background-color: #3156b5;
+    transition: 0.3s;
+
+}
+#myclass:hover .span1{
+    display: inline-block;
+
+}
+.span2{
+    color: white;
+    position: absolute;
+    z-index: 99;
+    top:275.5px;
+    margin-left: 37.5px;
+    background-color: #3156b5;
+    width: 160px;
+    height: 64PX;
+    text-align: center;
+    transition: 0.5s;
+    display: none;
+}
+.options{
+    position: absolute;
+    color: white;
+    width: 100px;
+    left: 30px;
+    top: 20px;
+    transition: 0.3s;
+
+}
+#options:hover{
+    background-color: #3156b5;
+    transition: 0.3s;
+}
+#options:hover .settinspan{
+    display: inline-block;
+}
+.exitp{
+    position: absolute;
+    color: white;
+    width: 100px;
+    left: 30px;
+    top: 20px;
+    transition: 0.3s;
+}
+.span3{
+    color: white;
+    position: absolute;
+    z-index: 99;
+    top:405px;
+    margin-left: 37.5px;
+    background-color: #3156b5;
+    width: 160px;
+    height: 64PX;
+    text-align: center;
+    transition: 0.5s;
+    display: none;
+}
+#exit:hover{
+    background-color: #3156b5;
+    transition: 0.3s;
+}
+#exit:hover .span3{
+    display: inline-block;
+}
+
+.starspan1{
+    color: white;
+    position: absolute;
+    z-index: 99;
+    top:211px;
+    margin-left: 37.5px;
+    background-color: #3156b5;
+    width: 160px;
+    height: 64PX;
+    text-align: center;
+    transition: 0.5s;
+    display: none;
+}
+.starspan{
+    position: absolute;
+    color: white;
+    width: 100px;
+    left: 30px;
+    top: 20px;
+    transition: 0.3s;
+}
+#star:hover{
+    background-color: #3156b5;
+    transition: 0.3s;
+}
+#star:hover .starspan1{
+    display: inline-block;
+}
+
+.users-header
+{
+    width: 100%;
+    margin-left: auto;
+    padding-top: 50px;
+}
+.Table tbody {
+    background-color: white;
+}
+.Table thead{
+    background-color: #e91e63;
+    color: white;
+    height: 50px;
+}.Table thead th{
+     background-color: #e91e63;
+     color: white;
+     height: 50px;
+ }
+.Table tbody td{
+    width: 200px;
+}
+.Table thead .column {
+    margin-right: 45px;
+}
+.Table{
+    position: absolute;
+    top: 60px;
+    left: 10px;
+    display: block;
+    max-height: 500px;
+    overflow: auto;
+}
+.Table tbody tr:hover{
+    background-color: #ececec;
+    transition: 0.3s;
+}
+.subjectTable thead {
+    background-color: #e91e63;
+    color: white;
+}
+.subjectTable tbody .column1 {
+    width: 50px;
+}
+.subjectTable thead tr{
+    width: 500px;
+}
+.subjectTable{
+    position: absolute;
+    display: block;
+    left: 30px;
+    top: 700px;
+    max-height: 400px;
+    overflow: auto;
+}
+.subjectTable tbody{
+    background-color: white;
+}
+.subjectTable tbody tr:hover{
+    background-color: #ececec;
+    transition: 0.3s;
+}

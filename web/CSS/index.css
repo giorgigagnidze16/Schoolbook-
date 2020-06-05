@@ -1,0 +1,325 @@
+.top-container{
+    text-align: center;
+    background-image: url('../images/bground.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 800px;
+    height: 900px;
+    width: 100%;
+    position: relative;
+    justify-content: center;
+
+}
+body{
+     font-family: DejaVu Sans,sans-serif;
+    overflow-x: hidden;
+}
+html{
+    scroll-behavior: smooth;
+}
+.navbar{
+    width: 1350px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.collapse{
+    margin-right: 80px;
+}
+.brand{
+    height: 70px;
+    width: auto;
+    margin-left: 70px;
+}
+@media only screen and (max-width: 1300px) {
+    .navbar{
+        width: 100%;
+    }
+    .brand{
+        margin: 0px;
+    }
+}
+
+
+@font-face {
+    font-family: 'DejaVu Sans';
+    src: url('../DejaVuSans.woff2') format('woff2'),
+    url('../DejaVuSans.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.navbar .navbar-nav .nav-item a{
+    color: white;
+    transition: 0.2s;
+}
+
+.navbar .navbar-nav .nav-item a:hover{
+    color:#9aecff;
+    transition: 0.35s;
+}
+.navbar .navbar-nav .nav-item{
+    padding: 0 15px;
+}
+.screen{
+    margin-top: 160px;
+    margin-right: 100px;
+    pointer-events: none;
+    display: inline-block;
+    float: right;
+}
+.martva-header{
+    color: white;
+    font-weight: bold;
+    text-align: left;
+    font-size: 38px;
+    display: inline-block;
+    float: left;
+    margin-top: 260px;
+    margin-left: 85px;
+
+}
+.wrapper{
+    width: 1350px;
+    margin: 0 auto;
+    position: relative;
+}
+.tu{
+    color: white;
+    position: absolute;
+    display: inline-block;
+    text-align: left;
+    top: 380px;
+    left: 85px;
+}
+.moitxove{
+    display: inline-block;
+    position: absolute;
+    top: 100px;
+    height: 20px;
+    left: 85px;
+    color: white;
+    text-decoration: none;
+    top: 480px;
+    border-style: solid;
+    width: 280px;
+    min-width: 280px;
+    padding: 15px;
+    padding-bottom: 35px;
+    border-radius: 40px;
+    border-color: #03b6df;
+    background-color: #03b6df;
+
+}
+.moitxove:hover{
+    color: white;
+    text-decoration: none;
+}
+.mid{
+    height: 350px;
+    text-align: center;
+}
+.about-header{
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+.warmoadgens {
+    font-size: 14px;
+    width: 52%;
+    font-weight: bold;
+
+    margin: 0 auto;
+}
+.module{
+    margin-right: 10px;
+    margin-left: 30px;
+    display: inline-block;
+    text-align: center;
+    top: 80px;
+    height: 370px;
+    width: 370px;
+    background-color: #f7f8fc;
+    border-bottom-right-radius: 70px;
+    border-top-left-radius: 70px;
+}
+.blue{
+    background-color: #54d8e0;
+    height: 150px;
+    width: 100%;
+    border-top-left-radius: 70px;
+    border-bottom-right-radius: 70px;
+}
+.inner-header{
+    font-weight: bold;
+    margin-top: 20px;
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+.inner-p{
+    font-size: 14px;
+    width: 90%;
+    margin-top: 40px;
+    margin: 0 auto;
+    font-weight: bold;
+}
+.inner-img{
+    height: 80px;
+    width: auto;
+    margin-top: 40px;
+    transition: 0.7s;
+}
+.modules{
+    width: 1350px;
+    margin: 0 auto;
+    text-align: center;
+}
+.module:hover .inner-img{
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    transition: 0.7s;
+}
+.module:hover{
+    background-color: #ffff;
+    transition: 0.3s;
+    -moz-box-shadow:    3px 3px 5px 6px rgba(204, 204, 204, 0.1);
+    -webkit-box-shadow: 3px 3px 5px 6px rgba(204, 204, 204, 0.1);
+    box-shadow:         3px 3px 5px 6px rgba(204, 204, 204, 0.1);
+}
+.additional{
+    font-weight: bold;
+    margin-top: 70px;
+    margin-bottom: 60px;
+}
+
+
+form {
+    background-color: #f7f7f7;
+    width: 350px;
+    height: 350px;
+    margin: 30px auto 0;
+    overflow: hidden;
+
+}
+
+label {
+    position: relitive;
+    display: inline-block;
+    color: #a1a1a1;
+    top: 100px;
+    font-size: 1.25em;
+    transition: all .5s ease;
+    z-index: 10;
+    position: relative;
+    top: -30px;
+}
+
+.input-container {
+    width: 75%;
+    position: relative;
+    margin: 45px auto -25px;
+}
+
+input[type="text"] {
+    width: 100%;
+    position: relative;
+    display: inline-block;
+    font-size: 1.25em;
+    padding: 0 0 5px 0;
+    color: #888888;
+    background-color: transparent;
+    border: none;
+    border-bottom: solid 2px #05b7e2;
+    outline: none;
+    z-index: 20;
+}
+input[type="password"] {
+    width: 100%;
+    position: relative;
+    display: inline-block;
+    font-size: 1.25em;
+    padding: 0 0 5px 0;
+    color: #888888;
+    background-color: transparent;
+    border: none;
+    border-bottom: solid 2px #05b7e2;
+    outline: none;
+    z-index: 20;
+}
+input[type="text"]:focus ~ label, input[type="text"]:valid ~ label {
+    top: -60px;
+}
+input[type="password"]:focus ~ label, input[type="password"]:valid ~ label {
+    top: -60px;
+}
+input[type="submit"] {
+    cursor: pointer;
+    margin: auto;
+    width: 100%;
+    background-color: #05b7e2;
+    color: white;
+    font-size: 1.25em;
+    padding: 10px 0;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: #05b7e2;
+    outline: none;
+}
+
+.login-wrapper{
+
+    width: 1350px;
+    margin: 0 auto;
+    margin-bottom: 120px;
+}
+
+.login-header{
+    font-weight: bold;
+    text-align: center;
+    margin-top: 150px;
+    margin-bottom: 20px;
+
+}
+
+
+.navbar.scrolled{
+    background-color: #00b6e1;
+    transition: 0.4s;
+}
+.navbar.scrolled {
+    margin-top: 0;
+    width: 100%;
+}
+.bottom{
+    text-align: center;
+    width: 100%;
+    height: 600px;
+    background-image: url('../images/footer.png');
+    background-size: 100% 100%;
+}
+.copyright{
+
+    color: #fff;
+    position: relative;
+    font-size: 14px;
+    bottom: -435px;
+
+}
+.daxmareba{
+    color: #fff;
+    position: relative;
+    top: 250px;
+
+}
+.email{
+    color: #fff;
+    position: relative;
+    top: 300px;
+}
+.bot-wrap{
+    width: 1350px;
+    margin: 0 auto;
+    text-align: center;
+}
+.number{
+    color: #fff;
+    position: relative;
+    top: 300px;
+}

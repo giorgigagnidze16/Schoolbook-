@@ -1,0 +1,160 @@
+body{
+    background-color: #3a519d;
+    margin: 0px;
+    overflow-x: hidden;
+    text-align: center;
+}
+
+.container{
+    position: absolute;
+    width: 1280px;
+    margin: 0px;
+    top: 35px;
+    display: block;
+
+}
+.main{
+    position: relative;
+    height: 100%;
+}
+.sidebar{
+    position: absolute;
+    height: 1200px;
+    width: 150px;
+    left: 0px;
+
+}
+.color{
+    height: 1120px;
+    background-color: #1e40ad;
+    border-style: solid;
+    border-color: #1e40ad;
+    border-bottom-left-radius: 8px;
+}
+.list{
+    background-color: #113aa2;
+    height: 80px;
+    width: 75px;
+    border-top-left-radius: 20px;
+}
+.logo{
+    padding-top: 10px;
+    height: 65px;
+    width: auto;
+    display: block;
+    margin-top: auto;
+    margin: 0 auto;
+}
+
+li{
+    list-style-type: none;
+}
+ul{
+    margin: 0px;
+}
+.info
+{
+    position: relative;
+    height: 1200px;
+    width: 300px;
+    left: 100px;
+}
+.purple{
+    width: 300px;
+    height: 1200px;
+}
+.header{
+    position: absolute;
+    font-size: 20px;
+    display:inline-block;
+    left: 15px;
+    top: 15px;
+}
+.bottom{
+    font-size: 10px;
+    color: white;
+    position: absolute;
+    bottom: 25px;
+    width: 247px;
+    left: 26.5px;
+
+}
+.madeby{
+    position: absolute;
+    bottom: 10px;
+    width: 200px;
+    left: 49px;
+}
+.right{
+    display: inline-block;
+    width: 850px;
+    height: 1200px;
+    position: absolute;
+    background-color: #f2f7ff;
+    top: 0px;
+    left: 415px;
+    border-style: solid;
+    border-color: #f2f7ff;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+
+.gif{
+    position: absolute;
+    height: 140px;
+    width: 140px;
+    border-radius: 300px;
+    left: 75px;
+    top: 80px;
+
+}
+.gif:hover{
+    pointer-events: none;
+}
+.chroom-header{
+    color: white;
+    position: absolute;
+    top: 250px;
+    left: 85px;
+}
+.chroom-header:hover{
+    pointer-events: none;
+}
+#msg-box{
+    position: absolute;
+    left: 130px;
+    top: 50px;
+    border-radius: 10px;
+}
+#messageField{
+    position: absolute;
+    resize: none;
+    width: 450px;
+    height: 50px;
+    top: 570px;
+    left: 130px;
+    border-radius: 5px;
+}
+#messageField:focus{
+    outline: none;
+}
+.sendBtn{
+    position: absolute;
+    border-style: solid;
+    width: 130px;
+    height: 30px;
+    font-size: 14px;
+    background-color: #3282b8;
+    border-color: #3282b8;
+    color: white;
+    font-weight: bold;
+    border-radius: 15px;
+    top: 580px;
+    right: 115px;
+    opacity: 0.6;
+    transition: 0.5s;
+}
+.sendBtn:hover{
+    opacity: 1;
+    transition: 0.5s;
+}

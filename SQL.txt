@@ -1,0 +1,134 @@
+CREATE TABLE `users` (
+  `User_ID` int(11) NOT NULL AUTO_INCREMENT,
+  `ID_Number` int(11) unsigned zerofill DEFAULT NULL,
+  `Password` varchar(45) DEFAULT NULL,
+  `First_Name` varchar(45) DEFAULT NULL,
+  `Last_Name` varchar(45) DEFAULT NULL,
+  `User_Type_ID` varchar(45) DEFAULT NULL,
+  `Class_Name` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`User_ID`)
+) ;
+
+
+insert into users(ID_Number,Password,First_Name,Last_Name,User_Type_ID,Class_Name) values(1111111111,'beqa123','Beqa','Chelidze',3,'0');
+
+
+CREATE TABLE `gacdenebi` (
+  `Gacdena_Date` date NOT NULL,
+  `Subject_ID` int(11) NOT NULL,
+  `Gacdena` int(11) NOT NULL,
+  `User_ID` int(11) DEFAULT NULL,
+  `Class_Name` varchar(45) DEFAULT NULL,
+  `Gacdena_ID` int(11) NOT NULL AUTO_INCREMENT,
+  PRIMARY KEY (`Gacdena_ID`)
+) ;
+
+
+CREATE TABLE `homework_user_rel` (
+  `Homework_ID` int(11) NOT NULL,
+  `User_ID` int(11) DEFAULT NULL,
+  `Subject_ID` int(11) DEFAULT NULL,
+  `DoneOrNot` varchar(45) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+CREATE TABLE `homeworks` (
+  `Homework_ID` int(11) NOT NULL AUTO_INCREMENT,
+  `Homework` varchar(45) DEFAULT NULL,
+  `Class_ID` varchar(45) DEFAULT NULL,
+  `Subject_ID` varchar(45) DEFAULT NULL,
+  `DoneOrNot` int(11) DEFAULT NULL,
+  `HomeworkDate` date DEFAULT NULL,
+  `Deadline` date DEFAULT NULL,
+  `Class_Name` varchar(45) DEFAULT NULL,
+  `Teacher_ID` int(11) DEFAULT NULL,
+  PRIMARY KEY (`Homework_ID`)
+);
+
+
+CREATE TABLE `marks` (
+  `Mark_ID` int(11) NOT NULL AUTO_INCREMENT,
+  `Mark` int(11) DEFAULT NULL,
+  `User_ID` int(11) DEFAULT NULL,
+  `Subject_ID` int(11) DEFAULT NULL,
+  `Mark_Date` date DEFAULT NULL,
+  PRIMARY KEY (`Mark_ID`)
+) ;
+
+
+
+CREATE TABLE `quiz` (
+  `Quiz_ID` int(11) NOT NULL AUTO_INCREMENT,
+  `Question` varchar(95) DEFAULT NULL,
+  `Answer1` varchar(45) DEFAULT NULL,
+  `Answer2` varchar(45) DEFAULT NULL,
+  `Answer3` varchar(45) DEFAULT NULL,
+  `Answer` varchar(45) DEFAULT NULL,
+  `checkboxID` varchar(45) DEFAULT NULL,
+  `Date` date DEFAULT NULL,
+  PRIMARY KEY (`Quiz_ID`)
+);
+
+
+
+CREATE TABLE `quiz_rel` (
+  `User_ID` int(11) NOT NULL,
+  `Score` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`User_ID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+
+
+CREATE TABLE `quiz_user_rel` (
+  `Quiz_ID` int(11) NOT NULL,
+  `User_ID` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`Quiz_ID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+
+CREATE TABLE `subject` (
+  `Subject_ID` int(11) NOT NULL AUTO_INCREMENT,
+  `Subject_Name` varchar(255) NOT NULL,
+  PRIMARY KEY (`Subject_ID`)
+) ;
+
+CREATE TABLE `user_avatar` (
+  `User_ID` varchar(45) DEFAULT NULL,
+  `User_Avatar` longblob NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+
+
+CREATE TABLE `user_classes_rel` (
+  `User_ID` int(11) NOT NULL,
+  `Class_ID` int(11) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+
+CREATE TABLE `user_types` (
+  `User_Type_ID` int(11) NOT NULL,
+  `User_Type` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`User_Type_ID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+CREATE TABLE `users_subject_rel` (
+  `User_ID` int(11) NOT NULL,
+  `Subject_ID` int(11) DEFAULT NULL,
+  PRIMARY KEY (`User_ID`),
+  KEY `fk_subject_id_idx` (`Subject_ID`),
+  CONSTRAINT `fk_subject_id` FOREIGN KEY (`Subject_ID`) REFERENCES `subject` (`Subject_ID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+CREATE TABLE `class` (
+  `Class_ID` int(11) NOT NULL AUTO_INCREMENT,
+  `Class_Name` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`Class_ID`)
+);
+
+insert into user_types(User_Type_ID,User_Type) values (1,'Student');
+insert into user_types(User_Type_ID,User_Type) values (2,'Teacher');
+insert into user_types(User_Type_ID,User_Type) values (3,'Admin');
+
+insert into class(Class_Name) values ("1-A");
+insert into class(Class_Name) values ("7-A");
+insert into class(Class_Name) values ("1-B");
+insert into class(Class_Name) values("4-A");
